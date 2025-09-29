@@ -11,7 +11,7 @@
 % Language:                            %
 % english (default), norsk             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[landscape]{uioposter}
+\documentclass[portrait]{uioposter}
 
 
 \usepackage{lipsum}                                % Dummy text
@@ -21,21 +21,16 @@
 \setlength{\TPVertModule}{\paperheight}
 
 
-\title{Some Lengthy and Complicated Research Title}
+\title{SAIL-K Framework For Secure AI Applications}
 \author
 {%
-    First Author\inst{1}
-    \and
-    Second Author\inst{2}
-    \and
-    Third Author\inst{1}
+    Ryan Marinelli \inst{1}
 }
 %% Optional:
 \institute
 {
-    \inst{1} Department of Mathematics
-    \and
-    \inst{2} Department of Informatics
+    \inst{1} Department of Informatics 
+
 }
 %% Or:
 %\institute{Contact information}
@@ -52,43 +47,66 @@
 
 \begin{column}{\textwidth/3 - 2cm}
     \begin{block}{Introduction}
-        \lipsum[1]
+ SAIL-K is a new framework for engaging with AI systems is proposed. The goal of this framework is to augment social blueprints to orient the focus of developers to create more robust and secure AI systems. Key issues are identified per layer with a sketch of solutions to prime intervention 
     \end{block}
 
-    \begin{block}{Method}
-        \lipsum[2]
-    \end{block}
-\end{column}
-
-
-\begin{column}{\textwidth/3 - 2cm}
-    \begin{exampleblock}{Does it come in black?}
-        Sure, use an \structure{exampleblock}!
-    \end{exampleblock}
-
-    \begin{block}{Results}
-        \lipsum[75]
-        \missingfigure{Striking imagery relevant to the research}
-        \unskip
-    \end{block}
-
-    \begin{block}{Conclusions}
-        \lipsum[6]
+    \begin{block}{Framework}
+    \begin{figure}
+        \centering
+        \begin{itemize}
+            \item Social Layer: User Interactions with AI
+            \item Application Infrastructure: Cloud, Model Context Protocol, Agent2Agent 
+            \item Backend Logic \& Database: Application Logic, SQL 
+            \item AI Model: Deepseek, ChatGPT, reasoning models
+            \item AI Knowledge: Mechanistic Interpretability
+            \item \includegraphics[width=1.0\linewidth]{SAIL.png}
+        \end{itemize}
+        \caption{SAIL-K Framework}
+        \label{fig:enter-label}
+    \end{figure}
     \end{block}
 \end{column}
 
 
 \begin{column}{\textwidth/3 - 2cm}
-    \begin{alertblock}{How do you make it pop?}
-        Use an \alert{alertblock}!
+    \begin{block}{Security Issues Per Layer}
+            \item Social Layer: \textbf{Misinformation Campaigns, Data Drift }
+            \item Application Infrastructure: \textbf{Leakage in Cloud Environment, Toxic Context}
+            \item Backend Logic & Database: \textbf{Vulnerabilities, Prompt Injection}
+            \item AI Model: \textbf{Faulty Reasoning} 
+            \item AI Knowledge: \textbf{Faulty Knowledge }
+    \end{block}
+
+    \begin{block}{Mitigations}
+            \item Social Layer: \textbf{Moderation of user activity by model providers}
+            \item Application Infrastructure: \textbf{Encryption, Homomorphic Encryption}
+            \item Backend Logic \& Database: \textbf{Pentesting Agents, Prompt Filters}
+            \item AI Model: \textbf{Analysis of CoT changes to detect faults} 
+            \item AI Knowledge: \textbf{Knowledge editing to remove toxic facts}
+    \end{block}
+\end{column}
+
+
+\begin{column}{\textwidth/3 - 2cm}
+    \begin{alertblock}{AI Based Worms}
+        Zero Click worms have been developed and pose a threat to multi-agent systems. They have the ability to undermine production systems throughout layers of SAIL-K. 
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\linewidth]{wormy.png}
+            \label{fig:enter-label}
+        \end{figure}
     \end{alertblock}
 
-    \begin{block}{Acknowledgements}
-        \lipsum[4]
+    \begin{block}{Acknowledgments}
+       I wanted to thank my advisors: \r{A}vald \r{A}slaugson Sommervoll, Fabio Massimo Zenaro, and Laszlo Tibor Erdodi. This work is a summary of my PhD thesis. 
     \end{block}
 
     \begin{block}{References}
-       \lipsum[6]
+        Marinelli, R. (n.d.). Fortifying AI in Deployment Contexts: A Defense in Depth Approach [Unpublished doctoral dissertation]. University of Oslo.
+        
+       Cohen, S., Bitton, R. and Nassi, B., 2024. Here comes the AI worm: Unleashing zero-click worms that target GenAI-powered applications. arXiv preprint arXiv:2403.02817.
+
+       
     \end{block}
 \end{column}
 
@@ -96,12 +114,12 @@
 \end{columns}
 
 
-\begin{textblock}{0.5}(0.12, 0.92)
+\begin{textblock}{0.5}(0.15, 0.92)
     \color{white}
     \sffamily
-    \textbf{Write here using textblock}
+    \textbf{Department of Informatics}
     \\
-    Such as contact information or references
+    Gaustadalléen 23B, 0373 Oslo, Norway
 \end{textblock}
 
 
